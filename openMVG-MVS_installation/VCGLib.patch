@@ -1,0 +1,28 @@
+#
+# VCLib patch by Pierre Moulon, 09/14/2015
+#
+Index: vcg/complex/algorithms/clean.h
+===================================================================
+--- vcg/complex/algorithms/clean.h	(revision 5553)
++++ vcg/complex/algorithms/clean.h	(working copy)
+@@ -452,7 +452,7 @@
+     return count_removed;
+   }
+ 
+-  static int SplitSelectedVertexOnEdgeMesh(MeshType& m)
++  static void SplitSelectedVertexOnEdgeMesh(MeshType& m)
+   {
+     tri::RequireCompactness(m);
+     tri::UpdateFlags<MeshType>::VertexClearV(m);
+Index: vcg/complex/algorithms/hole.h
+===================================================================
+--- vcg/complex/algorithms/hole.h	(revision 5553)
++++ vcg/complex/algorithms/hole.h	(working copy)
+@@ -98,6 +98,7 @@
+     ComputeQuality();
+     ComputeAngle();
+   }
++  virtual ~TrivialEar() {}
+ 
+   /// Compute the angle of the two edges of the ear.
+   // it tries to make the computation in a precision safe way.

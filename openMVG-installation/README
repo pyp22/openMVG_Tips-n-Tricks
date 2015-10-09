@@ -1,0 +1,9 @@
+Linux Debian compilation and installation script for openMVG
+
+This script is available for Debian distros and maybe for other ones using the aptitude mecanism (tested on Debian only)
+
+Its purpose is to automate openMVG compilation and installation under a Debian like distro.
+
+Original script was written by Natanael1234 from https://gist.github.com/Natanael1234/9440452
+
+
