@@ -1,9 +1,0 @@
-openMVG v0.9 & openMVS compilation bash script.
-
-This script, which comes has this, is available for Ubuntu distros and maybe for other ones using the apt-get mecanism.
-
-Its purpose is to automate openMVG AND openMVS compilation and installation under a Ubuntu distro.
-
-It's been realased as this and free to use, modify, copy and so on ...
-binaries & libs are installed in /usr/local and camera database in /usr/local/etc
-
